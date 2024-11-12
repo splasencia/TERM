@@ -8,10 +8,10 @@ COPY --from=solc /usr/local/bin/solc /usr/local/bin/solc
 COPY app /app
 WORKDIR /app
 
-RUN apk add --no-cache nodejs-lts npm && \
+RUN apk add --no-cache nodejs-lts npm python3 make g++ bash && \
     npm i -g npm && \
     npm install && \
-    apk del npm && \
+    apk del npm make g++ && \
     ln -s /contracts /app/contracts
 
 # set default container entrypoint

@@ -1,0 +1,14 @@
+{
+    "name": "solidity-deployer",
+    "version": "1.0.0",
+    "description": "Interactive Solidity contract deployer",
+    "main": "index.js",
+    "type": "module",
+    "dependencies": {
+      "ethers": "^5.7.0",
+      "fs-extra": "^10.1.0",
+      "inquirer": "^9.1.4",
+      "js-yaml": "^4.1.0"
+    }
+  }
+  
