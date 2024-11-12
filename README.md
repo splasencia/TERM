@@ -83,7 +83,7 @@ You are now interacting with the contract at 0x8e021Fffb749861C7aDCa1ed9b36177E3
   transfer
   approve
 ```
-**8. Choose a function**
+**8. Provide function parameters as needed**
 
 ```python
 ? Choose a function to interact with: balanceOf
