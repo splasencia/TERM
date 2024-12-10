@@ -204,7 +204,7 @@ function compileContracts(contractsPath, contractFiles) {
     try {
       // Run the solc command and capture output
       //const command = `solc --combined-json abi,bin ${filePath}`;
-      const command = `solc --evm-version paris --combined-json abi,bin ${filePath}`;
+      const command = `solc --optimize --evm-version paris --combined-json abi,bin ${filePath}`;
 
       const output = execSync(command, { encoding: "utf8" });
 
